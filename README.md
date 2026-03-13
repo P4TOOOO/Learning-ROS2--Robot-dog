@@ -5,7 +5,7 @@ I want to share all my docs, current steps and future updates I want to make to 
 This is my test model:  
 
   
-![Alt text](Robot_model.png)  
+![Alt text](Imagens/Robot_model.png)  
 
   
 It has 12 joints, 3 in each leg, hip, thigh and shin, (he is a little ugly but no problem) I build it with onshape cad and translated to URDF by onshape-to-robot commands.  
