@@ -1,0 +1,27 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    position_controllers:
+      type: position_controllers/JointGroupPositionController  # Esse é o tipo correto!
+
+position_controllers:
+  ros__parameters:
+    joints:
+      - hip1
+      - thig1
+      - shin1
+      - hip2
+      - thig2
+      - shin2
+      - hip3
+      - thig3
+      - shin3
+      - hip4
+      - thig4
+      - shin4  # liste exatamente os nomes dos seus joints revolute
+    command_interfaces: [position]
+    state_interfaces: [position]
