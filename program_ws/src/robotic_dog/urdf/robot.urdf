@@ -1,0 +1,677 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/cb668af11d4871f0abb26656/w/7cac70982ed9e9906ce9b993/e/54e291f19741a9ddbd2e9f32 -->
+<robot name="full_robot">
+  <!-- Link part_1 -->
+  <link name="part_1">
+    <inertial>
+      <origin xyz="0.00172417 0.1911 0.0877724" rpy="0 0 0"/>
+      <mass value="2.0"/>
+      <inertia ixx="0.1" ixy="0" ixz="0" iyy="0" iyz="0" izz="0.1"/>
+    </inertial>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="-0.00254094 0.152616 0.0627724" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00254094 0.152616 0.0627724" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_2 -->
+    <visual>
+      <origin xyz="-0.0509072 0.252289 0.0977724" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0509072 0.252289 0.0977724" rpy="-3.14159 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_3 -->
+    <visual>
+      <origin xyz="0.0543542 0.252326 0.0777849" rpy="-3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_3_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0543542 0.252326 0.0777849" rpy="-3.14159 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_4 -->
+    <visual>
+      <origin xyz="0.0543542 0.12991 0.0977724" rpy="-0 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_4_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0543542 0.12991 0.0977724" rpy="-0 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_5 -->
+    <visual>
+      <origin xyz="-0.0509072 0.12991 0.0777724" rpy="-0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_5_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0509072 0.12991 0.0777724" rpy="-0 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_2 -->
+  <link name="part_1_2">
+    <inertial>
+      <origin xyz="-0 -0.00241694 -0.0225089" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_6 -->
+    <visual>
+      <origin xyz="0.01 -0.0056307 -0.0288103" rpy="-1.5708 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_6_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01 -0.0056307 -0.0288103" rpy="-1.5708 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_7 -->
+    <visual>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+      <material name="part_1_7_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_3 -->
+  <link name="part_1_3">
+    <inertial>
+      <origin xyz="-0 -0.0809624 0.0066056" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_8 -->
+    <visual>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+      <material name="part_1_8_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_9 -->
+    <visual>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_9_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_4 -->
+  <link name="part_1_4">
+    <inertial>
+      <origin xyz="-0.0464389 0 0.00199898" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_10 -->
+    <visual>
+      <origin xyz="-0.0409342 -0.0203648 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+      <material name="part_1_10_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0409342 -0.0203648 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from part_1_3 to part_1_4 -->
+  <joint name="shin1" type="revolute">
+    <origin xyz="0 -0.1 -0.015" rpy="0 -0 1.5708"/>
+    <parent link="part_1_3"/>
+    <child link="part_1_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1_2 to part_1_3 -->
+  <joint name="thig3" type="revolute">
+    <origin xyz="-0 -0.03 -0.0145" rpy="-1.5708 1.5708 0"/>
+    <parent link="part_1_2"/>
+    <child link="part_1_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.57" upper="1.57"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1 to part_1_2 -->
+  <joint name="hip1" type="revolute">
+    <origin xyz="-0.0752765 0.115599 0.0877724" rpy="-0 1.5708 0"/>
+    <parent link="part_1"/>
+    <child link="part_1_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Link part_1_5 -->
+  <link name="part_1_5">
+    <inertial>
+      <origin xyz="0 -0.00241694 -0.0225173" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_11 -->
+    <visual>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+      <material name="part_1_11_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_12 -->
+    <visual>
+      <origin xyz="-0.01 -0.0056307 -0.0161897" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_12_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.01 -0.0056307 -0.0161897" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_6 -->
+  <link name="part_1_6">
+    <inertial>
+      <origin xyz="-0 -0.0809624 0.0066056" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_13 -->
+    <visual>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+      <material name="part_1_13_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_14 -->
+    <visual>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_14_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_7 -->
+  <link name="part_1_7">
+    <inertial>
+      <origin xyz="-0.0464389 0 0.00199898" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_15 -->
+    <visual>
+      <origin xyz="-0.0409342 -0.0203648 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+      <material name="part_1_15_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0409342 -0.0203648 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from part_1_6 to part_1_7 -->
+  <joint name="shin4" type="revolute">
+    <origin xyz="0 -0.1 -0.015" rpy="0 -0 1.5708"/>
+    <parent link="part_1_6"/>
+    <child link="part_1_7"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1_5 to part_1_6 -->
+  <joint name="thig2" type="revolute">
+    <origin xyz="0 -0.03 -0.0305" rpy="-1.5708 -1.5708 0"/>
+    <parent link="part_1_5"/>
+    <child link="part_1_6"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1 to part_1_5 -->
+  <joint name="hip2" type="revolute">
+    <origin xyz="-0.0752765 0.266599 0.0877724" rpy="-3.14159 -1.5708 0"/>
+    <parent link="part_1"/>
+    <child link="part_1_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Link part_1_8 -->
+  <link name="part_1_8">
+    <inertial>
+      <origin xyz="0 -0.00241694 -0.0225173" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_16 -->
+    <visual>
+      <origin xyz="-0.01 -0.0056307 -0.0161897" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_16_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.01 -0.0056307 -0.0161897" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_17 -->
+    <visual>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+      <material name="part_1_17_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_9 -->
+  <link name="part_1_9">
+    <inertial>
+      <origin xyz="-0 -0.0809624 0.0066056" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_18 -->
+    <visual>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_18_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_19 -->
+    <visual>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+      <material name="part_1_19_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_10 -->
+  <link name="part_1_10">
+    <inertial>
+      <origin xyz="-0.0464389 0 0.00199898" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_20 -->
+    <visual>
+      <origin xyz="-0.0409342 -0.0203648 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+      <material name="part_1_20_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0409342 -0.0203648 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from part_1_9 to part_1_10 -->
+  <joint name="shin2" type="revolute">
+    <origin xyz="0 -0.1 -0.015" rpy="0 -0 1.5708"/>
+    <parent link="part_1_9"/>
+    <child link="part_1_10"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1_8 to part_1_9 -->
+  <joint name="thig4" type="revolute">
+    <origin xyz="0 -0.03 -0.0305" rpy="-1.5708 -1.5708 0"/>
+    <parent link="part_1_8"/>
+    <child link="part_1_9"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1 to part_1_8 -->
+  <joint name="hip3" type="revolute">
+    <origin xyz="0.0787235 0.115599 0.0877724" rpy="-0 -1.5708 0"/>
+    <parent link="part_1"/>
+    <child link="part_1_8"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Link part_1_11 -->
+  <link name="part_1_11">
+    <inertial>
+      <origin xyz="-0 -0.00241694 -0.0225089" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_21 -->
+    <visual>
+      <origin xyz="0.01 -0.0056307 -0.0288103" rpy="-1.5708 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_21_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01 -0.0056307 -0.0288103" rpy="-1.5708 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_22 -->
+    <visual>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+      <material name="part_1_22_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00351609 0.0125 -0.0236189" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_3.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_12 -->
+  <link name="part_1_12">
+    <inertial>
+      <origin xyz="-0 -0.0809624 0.0066056" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_23 -->
+    <visual>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+      <material name="part_1_23_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.0675238 -0.0005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_24 -->
+    <visual>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+      <material name="part_1_24_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01 -0.0856897 0.0093693" rpy="3.14159 -0 3.14159"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link part_1_13 -->
+  <link name="part_1_13">
+    <inertial>
+      <origin xyz="-0.0464389 0 -0.00250102" rpy="0 0 0"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.05" ixy="0" ixz="0" iyy="0.05" iyz="0" izz="0.05"/>
+    </inertial>
+    <!-- Part part_1_25 -->
+    <visual>
+      <origin xyz="-0.0409342 -0.0203648 -0.005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+      <material name="part_1_25_material">
+        <color rgba="0.262745 0.282353 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0409342 -0.0203648 -0.005" rpy="-1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file:///home/pato/program_ws/src/robotic_dog/meshes/part_1_5.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from part_1_12 to part_1_13 -->
+  <joint name="shin3" type="revolute">
+    <origin xyz="0 -0.1 -0.015" rpy="0 -0 1.5708"/>
+    <parent link="part_1_12"/>
+    <child link="part_1_13"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1_11 to part_1_12 -->
+  <joint name="thig1" type="revolute">
+    <origin xyz="0 -0.03 -0.0145" rpy="-1.5708 1.5708 0"/>
+    <parent link="part_1_11"/>
+    <child link="part_1_12"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <!-- Joint from part_1 to part_1_11 -->
+  <joint name="hip4" type="revolute">
+    <origin xyz="0.0787235 0.266637 0.0877849" rpy="-3.14159 1.5708 0"/>
+    <parent link="part_1"/>
+    <child link="part_1_11"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <dynamics damping="10.0" friction="2.0"/>
+  </joint>
+  <gazebo>
+    <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>/home/pato/program_ws/src/robotic_dog/config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+  <ros2_control name="GazeboSystem" type="system">
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+  <!-- Um bloco para cada joint revolute -->
+    <joint name="hip1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="thig1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="shin1">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="hip2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="thig2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="shin2">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="hip3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="thig3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="shin3">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="hip4">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="thig4">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+    <joint name="shin4">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+    </joint>
+  <!-- Repita para TODOS os revolute: hip2, thig2, shin1, shin2, etc. -->
+  </ros2_control>
+</robot>
