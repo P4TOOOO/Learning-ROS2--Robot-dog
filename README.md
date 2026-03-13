@@ -7,8 +7,42 @@ My package is used for two things at the same time:
 - Rotating the node that makes it walk (He still can't walk)
   
 He starts the gazebo with a launch file, and runs the node normaly like other packages, I will put the commands in later topics.    
-# Instalation  
-
+# Installation  
+First you have to make sure the ROS2 jazzy is installed in your system by running  
+```bash
+ls /opt/ros
+```
+If returns jazzy it is installed, if not you have to install it by going to the ROS2 jazzy documentation.  
+After making sure of this you have to create a worksapce  
+```bash
+cd ~
+mkdir program_ws/src
+cd program_ws/src
+```
+Clone the repository  
+```bash
+git clone https://github.com/P4TOOOO/Learning-ROS2--Robot-dog.git
+```
+Install dependencies  
+```bash
+cd /program_ws
+rosdep update #only once
+rosdep install --from-paths src --ignore-src -r -y
+```
+Build the package  
+```bash
+colcon build
+```
+The package is installed in your workspace, now you need to source it to run the package, first source the ROS2 itself
+```bash
+cd ~
+source /opt/ros/jazzy/setup.bash
+```
+Source the package  
+```bash
+source program_ws/install/setup.bash
+```
+Now you are ready to run the node for the gazebo sim of my robot.  
 # Robot Model
 This is my test model:  
 
