@@ -16,12 +16,10 @@ class RoboticDogNode(Node):
             10
         )
 
-        self.start_pos = (-5.0, 0.0, 0.0)
-        self.end_pos = (0.0, 0.0, 0.0)
         self.num_steps = 50
 
         # Gera a trajetória
-        self.trajectory = self.generate_trajectory_forward(self.start_pos, self.end_pos, self.num_steps)
+        self.trajectory = self.generate_trajectory_forward(self.num_steps)
 
         self.positions = []
         self.all_angles = []
@@ -75,8 +73,7 @@ class RoboticDogNode(Node):
             motor_angle10, motor_angle11, motor_angle12,
         )
 
-    def generate_trajectory_forward(self, start_pos, end_pos, num_steps=50):
-        x0, y0, z0 = start_pos
+    def generate_trajectory_forward(num_steps=50):
         trajectory = []
         for step in range(num_steps + 1):
             amplitude = 5.0
