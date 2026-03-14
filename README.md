@@ -64,8 +64,25 @@ In this section I'm going to talk about the IK to this robot, initially, I had c
 
 ![Imagem](Imagens/)  
   
-#    
 # Lauch Files  
+In this section I'm going to explain the code of my ![gazebo simulation](robotic_dog/launch/gazebo.launch.py) launch file and show how to run it  
+```python
+from launch import LaunchDescription
+from launch.actions import IncludeLaunchDescription, TimerAction
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
+import os
+```
+This part is the imports of some libraries that I use for making the launch file
+```python
+def generate_launch_description():
+    pkg_dir = get_package_share_directory('robotic_dog')
+    urdf_path = os.path.join(pkg_dir, 'urdf', 'robot.urdf')
+```
+I'm creating the function of the launch file and especifing the paths for the URDF and the package name  
+```python
+
 # ROS2 node-code  
 # Path Motion  
 # Walking  
