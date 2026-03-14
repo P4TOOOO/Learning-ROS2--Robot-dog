@@ -13,35 +13,43 @@ First you have to make sure the ROS2 jazzy is installed in your system by runnin
 ls /opt/ros
 ```
 If returns jazzy it is installed, if not you have to install it by going to the ROS2 jazzy documentation.  
+
+  
 After making sure of this you have to create a worksapce  
 ```bash
 cd ~
 mkdir -p program_ws/src
 cd program_ws/src
 ```
+  
 Clone the repository  
 ```bash
 git clone https://github.com/P4TOOOO/Learning-ROS2--Robot-dog.git
 ```
+
 Install dependencies  
 ```bash
 cd /program_ws
 rosdep update #only once
 rosdep install --from-paths src --ignore-src -r -y
 ```
+
 Build the package  
 ```bash
 colcon build
 ```
+
 The package is installed in your workspace, now you need to source it to run the package, first source the ROS2 itself
 ```bash
 cd ~
 source /opt/ros/jazzy/setup.bash
 ```
+
 Source the package  
 ```bash
 source program_ws/install/setup.bash
 ```
+
 Now you are ready to run the node for the gazebo sim of my robot.  
 # Robot Model
 This is my test model:  
@@ -141,11 +149,24 @@ And finaly spawn the controlls for the robot using controller_manager package
         ),
 ```
 ## Running the simulation  
-If everything works out and you run the following command the gazebo will iniciate and the robot will apear in the space but first make sure to build and source the pkg   
+First make sure to build and source the pkg if everything works out run the following command to initiate the gazebo simulation  
 ```bash
 ros2 launch robotic_dog gazebo.launch.py
 ```
-# ROS2 node-code  
+The gazebo will apear like this:    
+
+![Alt text](Imagens/gazebo_sim.png)  
+
+The joints state publisher doesn't work properly but i will try to fix it, if you want to try the model to see if it moves you can publish the value of the motors by running  
+```bash
+ros2 topic pub /position_controllers/commands std_msgs/msg/Float64MultiArray "data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]" --once
+```
+With each of these values being the value of a specific motor of the robot where the order of the values correspond respectively to  
+* [hip1, thig4, shin1, hip2, thig2, shin3, hip3, thig1, shin4, hip4, thig3, shin2]  
+# Principal node  
+I will explain my principal code but note that it does not work properly I'm triyng to fix it and make a walking motion but it will take a time to finish  
+
+
 # Path Motion  
 # Walking  
 # Controlling by the keyboard  
