@@ -24,7 +24,7 @@ cd program_ws/src
   
 Clone the repository  
 ```bash
-git clone https://github.com/P4TOOOO/Learning-ROS2--Robot-dog.git
+git clone https://github.com/P4TOOOO/Learning-ROS2--Robot-dog.git .
 ```
 
 Install dependencies  
@@ -161,19 +161,19 @@ The joint publisher is now working but to make it work you have to install one p
 ```bash
 sudo apt install ros-jazzy-rqt-joint-trajectory-controller
 ```
-This package allows us to use another way to publish the data, and to run the new publisher run
+This package allows us to use another way to publish the data, and to run the new publisher
 ```bash
 ros2 run rqt_joint_trajectory_controller rqt_joint_trajectory_controller
 ```
 Another window will apear and look like this  
 
   
-![imagem](Imagens/controller_slide)  
+![imagem](Imagens/controller_slide.png)  
 
 
 to make it work you have to select the controler manager and the controller and if everything works you will have this  
 
-![imagem](Imagens/controller_slide_working)  
+![imagem](Imagens/controller_slides_working.png)  
 
 
 But if you want to publish manualy run
