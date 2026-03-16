@@ -8,7 +8,7 @@ My package is used for two things at the same time:
   
 He starts the gazebo with a launch file, and runs the node normaly like other packages, I will put the commands in later topics.    
 # Installation  
-First you have to make sure the ROS2 jazzy is installed in your system by running  
+First you have to make sure the ROS2 jazzy, and gazebo harmonics is installed in your system by running  
 ```bash
 ls /opt/ros
 ```
