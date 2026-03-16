@@ -157,12 +157,42 @@ The gazebo will apear like this:
 
 ![Alt text](Imagens/gazebo_sim.png)  
 
-The joints state publisher doesn't work properly but i will try to fix it, if you want to try the model to see if it moves you can publish the value of the motors by running  
+The joint publisher is now working but to make it work you have to install one package.
 ```bash
-ros2 topic pub /position_controllers/commands std_msgs/msg/Float64MultiArray "data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]" --once
+sudo apt install ros-jazzy-rqt-joint-trajectory-controller
+```
+This package allows us to use another way to publish the data, and to run the new publisher run
+```bash
+ros2 run rqt_joint_trajectory_controller rqt_joint_trajectory_controller
+```
+Another window will apear and look like this  
+
+  
+![imagem](Imagens/controller_slide)  
+
+
+to make it work you have to select the controler manager and the controller and if everything works you will have this  
+
+![imagem](Imagens/controller_slide_working)  
+
+
+But if you want to publish manualy run
+```bash
+ros2 topic pub --once /position_controllers/joint_trajectory trajectory_msgs/msg/JointTrajectory "{
+  header: {stamp: {sec: 0, nanosec: 0}},
+  joint_names: ['hip1', 'thig1', 'shin1', 'hip2', 'thig2', 'shin2', 'hip3', 'thig3', 'shin3', 'hip4', 'thig4', 'shin4'],
+  points: [
+    {
+      positions: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      velocities: [],   # optional
+      accelerations: [], # optional
+      time_from_start: {sec: 2, nanosec: 0}
+    }
+  ]
+}"
 ```
 With each of these values being the value of a specific motor of the robot where the order of the values correspond respectively to  
-* [hip1, thig4, shin1, hip2, thig2, shin3, hip3, thig1, shin4, hip4, thig3, shin2]  
+* [hip1, thig1, shin1, hip2, thig2, shin2, hip3, thig3, shin3, hip4, thig4, shin4]  
 # Principal node  
 I will explain my principal code but note that it does not work properly I'm triyng to fix it and make a walking motion but it will take a time to finish  
 The imports look like this  
