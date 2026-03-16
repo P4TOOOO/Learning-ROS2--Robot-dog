@@ -27,6 +27,7 @@ def generate_launch_description():
         ),
 
         # Spawnea o robô
+
         Node(
             package='ros_gz_sim',
             executable='create',
@@ -69,14 +70,5 @@ def generate_launch_description():
                     parameters=[{'use_sim_time': True}]
                 ),
             ]
-        ),
-
-        # GUI de sliders para teste
-        Node(
-            package='joint_state_publisher_gui',
-            executable='joint_state_publisher_gui',
-            name='joint_gui',
-            output='screen',
-            parameters=[{'use_sim_time': True}]
         ),
     ])
