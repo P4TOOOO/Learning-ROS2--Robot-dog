@@ -451,8 +451,8 @@ def main(args=None):
 if __name__ == '__main__':
     main()
 ```
-# Path Motion  
 # Walking  
+So for the robot walking I'm trying to make a CoM based walking but I have to change so many things into the code so it may take a while to make it work, I already did a little bit of this movement It is based in the ZMP position and trajectory, and then it puts the CoM in the ZMP position and after calculate the optimal leg positions to it dont fall.  
 # Controlling by the keyboard  
 
 
