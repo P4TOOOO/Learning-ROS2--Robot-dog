@@ -4,7 +4,7 @@ I want to share all my docs, current steps and future updates I want to make to 
 # My package  
 My package is used for two things at the same time:  
 - Starting the gazebo  
-- Rotating the node that makes it walk (He still can't walk)
+- Runnung the node that makes it walk (He still can't walk)
   
 He starts the gazebo with a launch file, and runs the node normaly like other packages, I will put the commands in later topics.    
 # Installation  
