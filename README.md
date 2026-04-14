@@ -1,4 +1,8 @@
-# Robotic-dog-simulation
+# Robotic-dog-simulation  
+![Static Badge](https://img.shields.io/badge/Python-3.12-blue)  ![Static Badge](https://img.shields.io/badge/ROS-Jazzy-red?link=https%3A%2F%2Fdocs.ros.org%2Fen%2Fjazzy%2F)  ![Static Badge](https://img.shields.io/badge/Gazebo-Harmonics-purple)
+
+
+
 I'm currently learning ros2 and making a robot dog simulation  
 I want to share all my docs, current steps and future updates I want to make to this simulation, I'm using ROS2 Jazzy running in Ubuntu 24.04.04 with gazebo harmonics, In this repository is all of my package files including the IK code, the URDF model to the robot and the launch files for the gazebo simulation. I have some files already done and a basic test model of my robot, so i will show and try to explain it for you.  
 # My package  
