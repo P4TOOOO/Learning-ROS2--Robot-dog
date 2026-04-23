@@ -410,16 +410,54 @@
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
+  <!-- Sensor IMU vinculado ao base_link (bloco SEPARADO) -->
+  <gazebo reference="base_link">
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <topic>/imu</topic>
+      <gz_frame_id>base_link</gz_frame_id>
+      <imu>
+        <angular_velocity>
+          <x><noise type="gaussian"><mean>0</mean><stddev>0.0001</stddev></noise></x>
+          <y><noise type="gaussian"><mean>0</mean><stddev>0.0001</stddev></noise></y>
+          <z><noise type="gaussian"><mean>0</mean><stddev>0.0001</stddev></noise></z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x><noise type="gaussian"><mean>0</mean><stddev>0.01</stddev></noise></x>
+          <y><noise type="gaussian"><mean>0</mean><stddev>0.01</stddev></noise></y>
+          <z><noise type="gaussian"><mean>0</mean><stddev>0.01</stddev></noise></z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
+
+  <!-- Plugins do Gazebo (bloco SEPARADO, sem reference) -->
   <gazebo>
-    <plugin filename="libgz_ros2_control-system.so" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <plugin filename="gz-sim-odometry-publisher-system" name="gz::sim::systems::OdometryPublisher">
+      <odom_frame>odom</odom_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+      <update_frequency>50</update_frequency>
+      <odom_topic>/odom</odom_topic>
+      <tf_topic>/tf</tf_topic>
+      <publish_tf>true</publish_tf>
+    </plugin>
+
+    <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
       <parameters>/home/pato/program_ws/src/robotic_dog/config/controllers.yaml</parameters>
+      <ros>
+        <parameter name="use_sim_time" value="true"/>
+      </ros>
     </plugin>
   </gazebo>
+
   <ros2_control name="GazeboSystem" type="system">
     <hardware>
       <plugin>gz_ros2_control/GazeboSimSystem</plugin>
     </hardware>
-  <!-- Um bloco para cada joint revolute -->
+    
     <joint name="hip1">
       <command_interface name="position"/>
       <state_interface name="position"/>
@@ -468,6 +506,5 @@
       <command_interface name="position"/>
       <state_interface name="position"/>
     </joint>
-  <!-- Repita para TODOS os revolute: hip2, thig2, shin1, shin2, etc. -->
   </ros2_control>
 </robot>
